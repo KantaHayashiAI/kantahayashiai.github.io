@@ -1,1 +1,0 @@
-# kantahayashiai.github.io
