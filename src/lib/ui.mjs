@@ -21,7 +21,7 @@ export function header(path="/",lang="en") {
 }
 export function footer(lang="en") {
  const ja=lang==='ja';
- return `<footer class="site-footer wrap"><nav class="footer-links" aria-label="${ja?'フッター':'Footer'}"><a href="${site.github}">GitHub</a><a href="/rss.xml">RSS</a><a href="${ja?'/':'/ja/'}" lang="${ja?'en':'ja'}">${ja?'English':'日本語'}</a>${site.stage==='preview'?`<a href="${pagePath('lab',lang)}">${ja?'表示チェック':'Test pages'}</a>`:''}</nav><div class="colophon"><span>© ${site.copyrightYear} Kanta Hayashi</span><span>Based on <a href="https://github.com/satnaing/astro-paper">AstroPaper</a></span></div></footer>`;
+ return `<footer class="site-footer wrap"><nav class="footer-links" aria-label="${ja?'フッター':'Footer'}"><a href="${ja?'https://x.com/HayashiKantaAI':'https://x.com/KantaHayashiAI'}">X</a><a href="${site.github}">GitHub</a><a href="mailto:kantahayashiai@gmail.com">Email</a><a href="/rss.xml">RSS</a><a href="${ja?'/':'/ja/'}" lang="${ja?'en':'ja'}">${ja?'English':'日本語'}</a>${site.stage==='preview'?`<a href="${pagePath('lab',lang)}">${ja?'表示チェック':'Test pages'}</a>`:''}</nav><div class="colophon"><span>© ${site.copyrightYear} Kanta Hayashi</span><span>Based on <a href="https://github.com/satnaing/astro-paper">AstroPaper</a></span></div></footer>`;
 }
 export function previewNotice(lang="en") {
  if(site.stage!=="preview")return "";
