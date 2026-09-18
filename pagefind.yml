@@ -1,0 +1,2 @@
+# Index article bodies only, not navigation or page chrome.
+root_selector: '[data-pagefind-body]'

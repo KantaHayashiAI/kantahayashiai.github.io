@@ -1,0 +1,8 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import { visiblePosts } from "../../lib/content.mjs";
+import { home } from "../../lib/ui.mjs";
+const posts = visiblePosts(await getCollection("posts"));
+---
+<Layout lang="ja"><Fragment set:html={home(posts,"ja")} /></Layout>

@@ -1,0 +1,5 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {notFound} from "../lib/ui.mjs";
+---
+<Layout title="Page not found" sample={true}><Fragment set:html={notFound()} /></Layout>

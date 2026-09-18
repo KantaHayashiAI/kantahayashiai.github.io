@@ -1,0 +1,1564 @@
+{
+  "scope": "Chromium fixtures using shared UI, CSS and JS. Markdown/math renderer differs from production. Search fetch and clipboard success mocked. Not an Astro build.",
+  "passed": 499,
+  "failed": 0,
+  "checks": [
+    {
+      "test": "light ink: contrast >= 4.5",
+      "detail": {
+        "ratio": 14.52
+      }
+    },
+    {
+      "test": "light muted: contrast >= 4.5",
+      "detail": {
+        "ratio": 5.27
+      }
+    },
+    {
+      "test": "light accent: contrast >= 4.5",
+      "detail": {
+        "ratio": 6.78
+      }
+    },
+    {
+      "test": "dark ink: contrast >= 4.5",
+      "detail": {
+        "ratio": 14.38
+      }
+    },
+    {
+      "test": "dark muted: contrast >= 4.5",
+      "detail": {
+        "ratio": 7.86
+      }
+    },
+    {
+      "test": "dark accent: contrast >= 4.5",
+      "detail": {
+        "ratio": 9.68
+      }
+    },
+    {
+      "test": "light 320px /: no page overflow"
+    },
+    {
+      "test": "light 320px /: landmarks"
+    },
+    {
+      "test": "light 320px /: theme"
+    },
+    {
+      "test": "light 320px /writing/: no page overflow"
+    },
+    {
+      "test": "light 320px /writing/: landmarks"
+    },
+    {
+      "test": "light 320px /writing/: theme"
+    },
+    {
+      "test": "light 320px /about/: no page overflow"
+    },
+    {
+      "test": "light 320px /about/: landmarks"
+    },
+    {
+      "test": "light 320px /about/: theme"
+    },
+    {
+      "test": "light 320px /search/: no page overflow"
+    },
+    {
+      "test": "light 320px /search/: landmarks"
+    },
+    {
+      "test": "light 320px /search/: theme"
+    },
+    {
+      "test": "light 320px /lab/: no page overflow"
+    },
+    {
+      "test": "light 320px /lab/: landmarks"
+    },
+    {
+      "test": "light 320px /lab/: theme"
+    },
+    {
+      "test": "light 320px /ja/: no page overflow"
+    },
+    {
+      "test": "light 320px /ja/: landmarks"
+    },
+    {
+      "test": "light 320px /ja/: theme"
+    },
+    {
+      "test": "light 320px /ja/writing/: no page overflow"
+    },
+    {
+      "test": "light 320px /ja/writing/: landmarks"
+    },
+    {
+      "test": "light 320px /ja/writing/: theme"
+    },
+    {
+      "test": "light 320px /ja/about/: no page overflow"
+    },
+    {
+      "test": "light 320px /ja/about/: landmarks"
+    },
+    {
+      "test": "light 320px /ja/about/: theme"
+    },
+    {
+      "test": "light 320px /ja/search/: no page overflow"
+    },
+    {
+      "test": "light 320px /ja/search/: landmarks"
+    },
+    {
+      "test": "light 320px /ja/search/: theme"
+    },
+    {
+      "test": "light 320px /ja/lab/: no page overflow"
+    },
+    {
+      "test": "light 320px /ja/lab/: landmarks"
+    },
+    {
+      "test": "light 320px /ja/lab/: theme"
+    },
+    {
+      "test": "light 320px /posts/a-small-experiment/: no page overflow"
+    },
+    {
+      "test": "light 320px /posts/a-small-experiment/: landmarks"
+    },
+    {
+      "test": "light 320px /posts/a-small-experiment/: theme"
+    },
+    {
+      "test": "light 320px /posts/a-readable-log/: no page overflow"
+    },
+    {
+      "test": "light 320px /posts/a-readable-log/: landmarks"
+    },
+    {
+      "test": "light 320px /posts/a-readable-log/: theme"
+    },
+    {
+      "test": "light 320px /posts/a-reading-room/: no page overflow"
+    },
+    {
+      "test": "light 320px /posts/a-reading-room/: landmarks"
+    },
+    {
+      "test": "light 320px /posts/a-reading-room/: theme"
+    },
+    {
+      "test": "light 320px /posts/give-the-equations-some-room/: no page overflow"
+    },
+    {
+      "test": "light 320px /posts/give-the-equations-some-room/: landmarks"
+    },
+    {
+      "test": "light 320px /posts/give-the-equations-some-room/: theme"
+    },
+    {
+      "test": "light 320px /posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "light 320px /posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "light 320px /posts/typography-and-language/: theme"
+    },
+    {
+      "test": "light 320px /ja/posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "light 320px /ja/posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "light 320px /ja/posts/typography-and-language/: theme"
+    },
+    {
+      "test": "light 320px /posts/figures-on-a-small-screen/: no page overflow"
+    },
+    {
+      "test": "light 320px /posts/figures-on-a-small-screen/: landmarks"
+    },
+    {
+      "test": "light 320px /posts/figures-on-a-small-screen/: theme"
+    },
+    {
+      "test": "light 320px /posts/a-data-mixture-you-can-move/: no page overflow"
+    },
+    {
+      "test": "light 320px /posts/a-data-mixture-you-can-move/: landmarks"
+    },
+    {
+      "test": "light 320px /posts/a-data-mixture-you-can-move/: theme"
+    },
+    {
+      "test": "light 320px /404/: no page overflow"
+    },
+    {
+      "test": "light 320px /404/: landmarks"
+    },
+    {
+      "test": "light 320px /404/: theme"
+    },
+    {
+      "test": "light 390px /: no page overflow"
+    },
+    {
+      "test": "light 390px /: landmarks"
+    },
+    {
+      "test": "light 390px /: theme"
+    },
+    {
+      "test": "light 390px /writing/: no page overflow"
+    },
+    {
+      "test": "light 390px /writing/: landmarks"
+    },
+    {
+      "test": "light 390px /writing/: theme"
+    },
+    {
+      "test": "light 390px /about/: no page overflow"
+    },
+    {
+      "test": "light 390px /about/: landmarks"
+    },
+    {
+      "test": "light 390px /about/: theme"
+    },
+    {
+      "test": "light 390px /search/: no page overflow"
+    },
+    {
+      "test": "light 390px /search/: landmarks"
+    },
+    {
+      "test": "light 390px /search/: theme"
+    },
+    {
+      "test": "light 390px /lab/: no page overflow"
+    },
+    {
+      "test": "light 390px /lab/: landmarks"
+    },
+    {
+      "test": "light 390px /lab/: theme"
+    },
+    {
+      "test": "light 390px /ja/: no page overflow"
+    },
+    {
+      "test": "light 390px /ja/: landmarks"
+    },
+    {
+      "test": "light 390px /ja/: theme"
+    },
+    {
+      "test": "light 390px /ja/writing/: no page overflow"
+    },
+    {
+      "test": "light 390px /ja/writing/: landmarks"
+    },
+    {
+      "test": "light 390px /ja/writing/: theme"
+    },
+    {
+      "test": "light 390px /ja/about/: no page overflow"
+    },
+    {
+      "test": "light 390px /ja/about/: landmarks"
+    },
+    {
+      "test": "light 390px /ja/about/: theme"
+    },
+    {
+      "test": "light 390px /ja/search/: no page overflow"
+    },
+    {
+      "test": "light 390px /ja/search/: landmarks"
+    },
+    {
+      "test": "light 390px /ja/search/: theme"
+    },
+    {
+      "test": "light 390px /ja/lab/: no page overflow"
+    },
+    {
+      "test": "light 390px /ja/lab/: landmarks"
+    },
+    {
+      "test": "light 390px /ja/lab/: theme"
+    },
+    {
+      "test": "light 390px /posts/a-small-experiment/: no page overflow"
+    },
+    {
+      "test": "light 390px /posts/a-small-experiment/: landmarks"
+    },
+    {
+      "test": "light 390px /posts/a-small-experiment/: theme"
+    },
+    {
+      "test": "light 390px /posts/a-readable-log/: no page overflow"
+    },
+    {
+      "test": "light 390px /posts/a-readable-log/: landmarks"
+    },
+    {
+      "test": "light 390px /posts/a-readable-log/: theme"
+    },
+    {
+      "test": "light 390px /posts/a-reading-room/: no page overflow"
+    },
+    {
+      "test": "light 390px /posts/a-reading-room/: landmarks"
+    },
+    {
+      "test": "light 390px /posts/a-reading-room/: theme"
+    },
+    {
+      "test": "light 390px /posts/give-the-equations-some-room/: no page overflow"
+    },
+    {
+      "test": "light 390px /posts/give-the-equations-some-room/: landmarks"
+    },
+    {
+      "test": "light 390px /posts/give-the-equations-some-room/: theme"
+    },
+    {
+      "test": "light 390px /posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "light 390px /posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "light 390px /posts/typography-and-language/: theme"
+    },
+    {
+      "test": "light 390px /ja/posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "light 390px /ja/posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "light 390px /ja/posts/typography-and-language/: theme"
+    },
+    {
+      "test": "light 390px /posts/figures-on-a-small-screen/: no page overflow"
+    },
+    {
+      "test": "light 390px /posts/figures-on-a-small-screen/: landmarks"
+    },
+    {
+      "test": "light 390px /posts/figures-on-a-small-screen/: theme"
+    },
+    {
+      "test": "light 390px /posts/a-data-mixture-you-can-move/: no page overflow"
+    },
+    {
+      "test": "light 390px /posts/a-data-mixture-you-can-move/: landmarks"
+    },
+    {
+      "test": "light 390px /posts/a-data-mixture-you-can-move/: theme"
+    },
+    {
+      "test": "light 390px /404/: no page overflow"
+    },
+    {
+      "test": "light 390px /404/: landmarks"
+    },
+    {
+      "test": "light 390px /404/: theme"
+    },
+    {
+      "test": "light 768px /: no page overflow"
+    },
+    {
+      "test": "light 768px /: landmarks"
+    },
+    {
+      "test": "light 768px /: theme"
+    },
+    {
+      "test": "light 768px /writing/: no page overflow"
+    },
+    {
+      "test": "light 768px /writing/: landmarks"
+    },
+    {
+      "test": "light 768px /writing/: theme"
+    },
+    {
+      "test": "light 768px /about/: no page overflow"
+    },
+    {
+      "test": "light 768px /about/: landmarks"
+    },
+    {
+      "test": "light 768px /about/: theme"
+    },
+    {
+      "test": "light 768px /search/: no page overflow"
+    },
+    {
+      "test": "light 768px /search/: landmarks"
+    },
+    {
+      "test": "light 768px /search/: theme"
+    },
+    {
+      "test": "light 768px /lab/: no page overflow"
+    },
+    {
+      "test": "light 768px /lab/: landmarks"
+    },
+    {
+      "test": "light 768px /lab/: theme"
+    },
+    {
+      "test": "light 768px /ja/: no page overflow"
+    },
+    {
+      "test": "light 768px /ja/: landmarks"
+    },
+    {
+      "test": "light 768px /ja/: theme"
+    },
+    {
+      "test": "light 768px /ja/writing/: no page overflow"
+    },
+    {
+      "test": "light 768px /ja/writing/: landmarks"
+    },
+    {
+      "test": "light 768px /ja/writing/: theme"
+    },
+    {
+      "test": "light 768px /ja/about/: no page overflow"
+    },
+    {
+      "test": "light 768px /ja/about/: landmarks"
+    },
+    {
+      "test": "light 768px /ja/about/: theme"
+    },
+    {
+      "test": "light 768px /ja/search/: no page overflow"
+    },
+    {
+      "test": "light 768px /ja/search/: landmarks"
+    },
+    {
+      "test": "light 768px /ja/search/: theme"
+    },
+    {
+      "test": "light 768px /ja/lab/: no page overflow"
+    },
+    {
+      "test": "light 768px /ja/lab/: landmarks"
+    },
+    {
+      "test": "light 768px /ja/lab/: theme"
+    },
+    {
+      "test": "light 768px /posts/a-small-experiment/: no page overflow"
+    },
+    {
+      "test": "light 768px /posts/a-small-experiment/: landmarks"
+    },
+    {
+      "test": "light 768px /posts/a-small-experiment/: theme"
+    },
+    {
+      "test": "light 768px /posts/a-readable-log/: no page overflow"
+    },
+    {
+      "test": "light 768px /posts/a-readable-log/: landmarks"
+    },
+    {
+      "test": "light 768px /posts/a-readable-log/: theme"
+    },
+    {
+      "test": "light 768px /posts/a-reading-room/: no page overflow"
+    },
+    {
+      "test": "light 768px /posts/a-reading-room/: landmarks"
+    },
+    {
+      "test": "light 768px /posts/a-reading-room/: theme"
+    },
+    {
+      "test": "light 768px /posts/give-the-equations-some-room/: no page overflow"
+    },
+    {
+      "test": "light 768px /posts/give-the-equations-some-room/: landmarks"
+    },
+    {
+      "test": "light 768px /posts/give-the-equations-some-room/: theme"
+    },
+    {
+      "test": "light 768px /posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "light 768px /posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "light 768px /posts/typography-and-language/: theme"
+    },
+    {
+      "test": "light 768px /ja/posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "light 768px /ja/posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "light 768px /ja/posts/typography-and-language/: theme"
+    },
+    {
+      "test": "light 768px /posts/figures-on-a-small-screen/: no page overflow"
+    },
+    {
+      "test": "light 768px /posts/figures-on-a-small-screen/: landmarks"
+    },
+    {
+      "test": "light 768px /posts/figures-on-a-small-screen/: theme"
+    },
+    {
+      "test": "light 768px /posts/a-data-mixture-you-can-move/: no page overflow"
+    },
+    {
+      "test": "light 768px /posts/a-data-mixture-you-can-move/: landmarks"
+    },
+    {
+      "test": "light 768px /posts/a-data-mixture-you-can-move/: theme"
+    },
+    {
+      "test": "light 768px /404/: no page overflow"
+    },
+    {
+      "test": "light 768px /404/: landmarks"
+    },
+    {
+      "test": "light 768px /404/: theme"
+    },
+    {
+      "test": "light 1440px /: no page overflow"
+    },
+    {
+      "test": "light 1440px /: landmarks"
+    },
+    {
+      "test": "light 1440px /: theme"
+    },
+    {
+      "test": "light 1440px /writing/: no page overflow"
+    },
+    {
+      "test": "light 1440px /writing/: landmarks"
+    },
+    {
+      "test": "light 1440px /writing/: theme"
+    },
+    {
+      "test": "light 1440px /about/: no page overflow"
+    },
+    {
+      "test": "light 1440px /about/: landmarks"
+    },
+    {
+      "test": "light 1440px /about/: theme"
+    },
+    {
+      "test": "light 1440px /search/: no page overflow"
+    },
+    {
+      "test": "light 1440px /search/: landmarks"
+    },
+    {
+      "test": "light 1440px /search/: theme"
+    },
+    {
+      "test": "light 1440px /lab/: no page overflow"
+    },
+    {
+      "test": "light 1440px /lab/: landmarks"
+    },
+    {
+      "test": "light 1440px /lab/: theme"
+    },
+    {
+      "test": "light 1440px /ja/: no page overflow"
+    },
+    {
+      "test": "light 1440px /ja/: landmarks"
+    },
+    {
+      "test": "light 1440px /ja/: theme"
+    },
+    {
+      "test": "light 1440px /ja/writing/: no page overflow"
+    },
+    {
+      "test": "light 1440px /ja/writing/: landmarks"
+    },
+    {
+      "test": "light 1440px /ja/writing/: theme"
+    },
+    {
+      "test": "light 1440px /ja/about/: no page overflow"
+    },
+    {
+      "test": "light 1440px /ja/about/: landmarks"
+    },
+    {
+      "test": "light 1440px /ja/about/: theme"
+    },
+    {
+      "test": "light 1440px /ja/search/: no page overflow"
+    },
+    {
+      "test": "light 1440px /ja/search/: landmarks"
+    },
+    {
+      "test": "light 1440px /ja/search/: theme"
+    },
+    {
+      "test": "light 1440px /ja/lab/: no page overflow"
+    },
+    {
+      "test": "light 1440px /ja/lab/: landmarks"
+    },
+    {
+      "test": "light 1440px /ja/lab/: theme"
+    },
+    {
+      "test": "light 1440px /posts/a-small-experiment/: no page overflow"
+    },
+    {
+      "test": "light 1440px /posts/a-small-experiment/: landmarks"
+    },
+    {
+      "test": "light 1440px /posts/a-small-experiment/: theme"
+    },
+    {
+      "test": "light 1440px /posts/a-readable-log/: no page overflow"
+    },
+    {
+      "test": "light 1440px /posts/a-readable-log/: landmarks"
+    },
+    {
+      "test": "light 1440px /posts/a-readable-log/: theme"
+    },
+    {
+      "test": "light 1440px /posts/a-reading-room/: no page overflow"
+    },
+    {
+      "test": "light 1440px /posts/a-reading-room/: landmarks"
+    },
+    {
+      "test": "light 1440px /posts/a-reading-room/: theme"
+    },
+    {
+      "test": "light 1440px /posts/give-the-equations-some-room/: no page overflow"
+    },
+    {
+      "test": "light 1440px /posts/give-the-equations-some-room/: landmarks"
+    },
+    {
+      "test": "light 1440px /posts/give-the-equations-some-room/: theme"
+    },
+    {
+      "test": "light 1440px /posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "light 1440px /posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "light 1440px /posts/typography-and-language/: theme"
+    },
+    {
+      "test": "light 1440px /ja/posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "light 1440px /ja/posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "light 1440px /ja/posts/typography-and-language/: theme"
+    },
+    {
+      "test": "light 1440px /posts/figures-on-a-small-screen/: no page overflow"
+    },
+    {
+      "test": "light 1440px /posts/figures-on-a-small-screen/: landmarks"
+    },
+    {
+      "test": "light 1440px /posts/figures-on-a-small-screen/: theme"
+    },
+    {
+      "test": "light 1440px /posts/a-data-mixture-you-can-move/: no page overflow"
+    },
+    {
+      "test": "light 1440px /posts/a-data-mixture-you-can-move/: landmarks"
+    },
+    {
+      "test": "light 1440px /posts/a-data-mixture-you-can-move/: theme"
+    },
+    {
+      "test": "light 1440px /404/: no page overflow"
+    },
+    {
+      "test": "light 1440px /404/: landmarks"
+    },
+    {
+      "test": "light 1440px /404/: theme"
+    },
+    {
+      "test": "dark 320px /: no page overflow"
+    },
+    {
+      "test": "dark 320px /: landmarks"
+    },
+    {
+      "test": "dark 320px /: theme"
+    },
+    {
+      "test": "dark 320px /writing/: no page overflow"
+    },
+    {
+      "test": "dark 320px /writing/: landmarks"
+    },
+    {
+      "test": "dark 320px /writing/: theme"
+    },
+    {
+      "test": "dark 320px /about/: no page overflow"
+    },
+    {
+      "test": "dark 320px /about/: landmarks"
+    },
+    {
+      "test": "dark 320px /about/: theme"
+    },
+    {
+      "test": "dark 320px /search/: no page overflow"
+    },
+    {
+      "test": "dark 320px /search/: landmarks"
+    },
+    {
+      "test": "dark 320px /search/: theme"
+    },
+    {
+      "test": "dark 320px /lab/: no page overflow"
+    },
+    {
+      "test": "dark 320px /lab/: landmarks"
+    },
+    {
+      "test": "dark 320px /lab/: theme"
+    },
+    {
+      "test": "dark 320px /ja/: no page overflow"
+    },
+    {
+      "test": "dark 320px /ja/: landmarks"
+    },
+    {
+      "test": "dark 320px /ja/: theme"
+    },
+    {
+      "test": "dark 320px /ja/writing/: no page overflow"
+    },
+    {
+      "test": "dark 320px /ja/writing/: landmarks"
+    },
+    {
+      "test": "dark 320px /ja/writing/: theme"
+    },
+    {
+      "test": "dark 320px /ja/about/: no page overflow"
+    },
+    {
+      "test": "dark 320px /ja/about/: landmarks"
+    },
+    {
+      "test": "dark 320px /ja/about/: theme"
+    },
+    {
+      "test": "dark 320px /ja/search/: no page overflow"
+    },
+    {
+      "test": "dark 320px /ja/search/: landmarks"
+    },
+    {
+      "test": "dark 320px /ja/search/: theme"
+    },
+    {
+      "test": "dark 320px /ja/lab/: no page overflow"
+    },
+    {
+      "test": "dark 320px /ja/lab/: landmarks"
+    },
+    {
+      "test": "dark 320px /ja/lab/: theme"
+    },
+    {
+      "test": "dark 320px /posts/a-small-experiment/: no page overflow"
+    },
+    {
+      "test": "dark 320px /posts/a-small-experiment/: landmarks"
+    },
+    {
+      "test": "dark 320px /posts/a-small-experiment/: theme"
+    },
+    {
+      "test": "dark 320px /posts/a-readable-log/: no page overflow"
+    },
+    {
+      "test": "dark 320px /posts/a-readable-log/: landmarks"
+    },
+    {
+      "test": "dark 320px /posts/a-readable-log/: theme"
+    },
+    {
+      "test": "dark 320px /posts/a-reading-room/: no page overflow"
+    },
+    {
+      "test": "dark 320px /posts/a-reading-room/: landmarks"
+    },
+    {
+      "test": "dark 320px /posts/a-reading-room/: theme"
+    },
+    {
+      "test": "dark 320px /posts/give-the-equations-some-room/: no page overflow"
+    },
+    {
+      "test": "dark 320px /posts/give-the-equations-some-room/: landmarks"
+    },
+    {
+      "test": "dark 320px /posts/give-the-equations-some-room/: theme"
+    },
+    {
+      "test": "dark 320px /posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "dark 320px /posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "dark 320px /posts/typography-and-language/: theme"
+    },
+    {
+      "test": "dark 320px /ja/posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "dark 320px /ja/posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "dark 320px /ja/posts/typography-and-language/: theme"
+    },
+    {
+      "test": "dark 320px /posts/figures-on-a-small-screen/: no page overflow"
+    },
+    {
+      "test": "dark 320px /posts/figures-on-a-small-screen/: landmarks"
+    },
+    {
+      "test": "dark 320px /posts/figures-on-a-small-screen/: theme"
+    },
+    {
+      "test": "dark 320px /posts/a-data-mixture-you-can-move/: no page overflow"
+    },
+    {
+      "test": "dark 320px /posts/a-data-mixture-you-can-move/: landmarks"
+    },
+    {
+      "test": "dark 320px /posts/a-data-mixture-you-can-move/: theme"
+    },
+    {
+      "test": "dark 320px /404/: no page overflow"
+    },
+    {
+      "test": "dark 320px /404/: landmarks"
+    },
+    {
+      "test": "dark 320px /404/: theme"
+    },
+    {
+      "test": "dark 390px /: no page overflow"
+    },
+    {
+      "test": "dark 390px /: landmarks"
+    },
+    {
+      "test": "dark 390px /: theme"
+    },
+    {
+      "test": "dark 390px /writing/: no page overflow"
+    },
+    {
+      "test": "dark 390px /writing/: landmarks"
+    },
+    {
+      "test": "dark 390px /writing/: theme"
+    },
+    {
+      "test": "dark 390px /about/: no page overflow"
+    },
+    {
+      "test": "dark 390px /about/: landmarks"
+    },
+    {
+      "test": "dark 390px /about/: theme"
+    },
+    {
+      "test": "dark 390px /search/: no page overflow"
+    },
+    {
+      "test": "dark 390px /search/: landmarks"
+    },
+    {
+      "test": "dark 390px /search/: theme"
+    },
+    {
+      "test": "dark 390px /lab/: no page overflow"
+    },
+    {
+      "test": "dark 390px /lab/: landmarks"
+    },
+    {
+      "test": "dark 390px /lab/: theme"
+    },
+    {
+      "test": "dark 390px /ja/: no page overflow"
+    },
+    {
+      "test": "dark 390px /ja/: landmarks"
+    },
+    {
+      "test": "dark 390px /ja/: theme"
+    },
+    {
+      "test": "dark 390px /ja/writing/: no page overflow"
+    },
+    {
+      "test": "dark 390px /ja/writing/: landmarks"
+    },
+    {
+      "test": "dark 390px /ja/writing/: theme"
+    },
+    {
+      "test": "dark 390px /ja/about/: no page overflow"
+    },
+    {
+      "test": "dark 390px /ja/about/: landmarks"
+    },
+    {
+      "test": "dark 390px /ja/about/: theme"
+    },
+    {
+      "test": "dark 390px /ja/search/: no page overflow"
+    },
+    {
+      "test": "dark 390px /ja/search/: landmarks"
+    },
+    {
+      "test": "dark 390px /ja/search/: theme"
+    },
+    {
+      "test": "dark 390px /ja/lab/: no page overflow"
+    },
+    {
+      "test": "dark 390px /ja/lab/: landmarks"
+    },
+    {
+      "test": "dark 390px /ja/lab/: theme"
+    },
+    {
+      "test": "dark 390px /posts/a-small-experiment/: no page overflow"
+    },
+    {
+      "test": "dark 390px /posts/a-small-experiment/: landmarks"
+    },
+    {
+      "test": "dark 390px /posts/a-small-experiment/: theme"
+    },
+    {
+      "test": "dark 390px /posts/a-readable-log/: no page overflow"
+    },
+    {
+      "test": "dark 390px /posts/a-readable-log/: landmarks"
+    },
+    {
+      "test": "dark 390px /posts/a-readable-log/: theme"
+    },
+    {
+      "test": "dark 390px /posts/a-reading-room/: no page overflow"
+    },
+    {
+      "test": "dark 390px /posts/a-reading-room/: landmarks"
+    },
+    {
+      "test": "dark 390px /posts/a-reading-room/: theme"
+    },
+    {
+      "test": "dark 390px /posts/give-the-equations-some-room/: no page overflow"
+    },
+    {
+      "test": "dark 390px /posts/give-the-equations-some-room/: landmarks"
+    },
+    {
+      "test": "dark 390px /posts/give-the-equations-some-room/: theme"
+    },
+    {
+      "test": "dark 390px /posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "dark 390px /posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "dark 390px /posts/typography-and-language/: theme"
+    },
+    {
+      "test": "dark 390px /ja/posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "dark 390px /ja/posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "dark 390px /ja/posts/typography-and-language/: theme"
+    },
+    {
+      "test": "dark 390px /posts/figures-on-a-small-screen/: no page overflow"
+    },
+    {
+      "test": "dark 390px /posts/figures-on-a-small-screen/: landmarks"
+    },
+    {
+      "test": "dark 390px /posts/figures-on-a-small-screen/: theme"
+    },
+    {
+      "test": "dark 390px /posts/a-data-mixture-you-can-move/: no page overflow"
+    },
+    {
+      "test": "dark 390px /posts/a-data-mixture-you-can-move/: landmarks"
+    },
+    {
+      "test": "dark 390px /posts/a-data-mixture-you-can-move/: theme"
+    },
+    {
+      "test": "dark 390px /404/: no page overflow"
+    },
+    {
+      "test": "dark 390px /404/: landmarks"
+    },
+    {
+      "test": "dark 390px /404/: theme"
+    },
+    {
+      "test": "dark 768px /: no page overflow"
+    },
+    {
+      "test": "dark 768px /: landmarks"
+    },
+    {
+      "test": "dark 768px /: theme"
+    },
+    {
+      "test": "dark 768px /writing/: no page overflow"
+    },
+    {
+      "test": "dark 768px /writing/: landmarks"
+    },
+    {
+      "test": "dark 768px /writing/: theme"
+    },
+    {
+      "test": "dark 768px /about/: no page overflow"
+    },
+    {
+      "test": "dark 768px /about/: landmarks"
+    },
+    {
+      "test": "dark 768px /about/: theme"
+    },
+    {
+      "test": "dark 768px /search/: no page overflow"
+    },
+    {
+      "test": "dark 768px /search/: landmarks"
+    },
+    {
+      "test": "dark 768px /search/: theme"
+    },
+    {
+      "test": "dark 768px /lab/: no page overflow"
+    },
+    {
+      "test": "dark 768px /lab/: landmarks"
+    },
+    {
+      "test": "dark 768px /lab/: theme"
+    },
+    {
+      "test": "dark 768px /ja/: no page overflow"
+    },
+    {
+      "test": "dark 768px /ja/: landmarks"
+    },
+    {
+      "test": "dark 768px /ja/: theme"
+    },
+    {
+      "test": "dark 768px /ja/writing/: no page overflow"
+    },
+    {
+      "test": "dark 768px /ja/writing/: landmarks"
+    },
+    {
+      "test": "dark 768px /ja/writing/: theme"
+    },
+    {
+      "test": "dark 768px /ja/about/: no page overflow"
+    },
+    {
+      "test": "dark 768px /ja/about/: landmarks"
+    },
+    {
+      "test": "dark 768px /ja/about/: theme"
+    },
+    {
+      "test": "dark 768px /ja/search/: no page overflow"
+    },
+    {
+      "test": "dark 768px /ja/search/: landmarks"
+    },
+    {
+      "test": "dark 768px /ja/search/: theme"
+    },
+    {
+      "test": "dark 768px /ja/lab/: no page overflow"
+    },
+    {
+      "test": "dark 768px /ja/lab/: landmarks"
+    },
+    {
+      "test": "dark 768px /ja/lab/: theme"
+    },
+    {
+      "test": "dark 768px /posts/a-small-experiment/: no page overflow"
+    },
+    {
+      "test": "dark 768px /posts/a-small-experiment/: landmarks"
+    },
+    {
+      "test": "dark 768px /posts/a-small-experiment/: theme"
+    },
+    {
+      "test": "dark 768px /posts/a-readable-log/: no page overflow"
+    },
+    {
+      "test": "dark 768px /posts/a-readable-log/: landmarks"
+    },
+    {
+      "test": "dark 768px /posts/a-readable-log/: theme"
+    },
+    {
+      "test": "dark 768px /posts/a-reading-room/: no page overflow"
+    },
+    {
+      "test": "dark 768px /posts/a-reading-room/: landmarks"
+    },
+    {
+      "test": "dark 768px /posts/a-reading-room/: theme"
+    },
+    {
+      "test": "dark 768px /posts/give-the-equations-some-room/: no page overflow"
+    },
+    {
+      "test": "dark 768px /posts/give-the-equations-some-room/: landmarks"
+    },
+    {
+      "test": "dark 768px /posts/give-the-equations-some-room/: theme"
+    },
+    {
+      "test": "dark 768px /posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "dark 768px /posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "dark 768px /posts/typography-and-language/: theme"
+    },
+    {
+      "test": "dark 768px /ja/posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "dark 768px /ja/posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "dark 768px /ja/posts/typography-and-language/: theme"
+    },
+    {
+      "test": "dark 768px /posts/figures-on-a-small-screen/: no page overflow"
+    },
+    {
+      "test": "dark 768px /posts/figures-on-a-small-screen/: landmarks"
+    },
+    {
+      "test": "dark 768px /posts/figures-on-a-small-screen/: theme"
+    },
+    {
+      "test": "dark 768px /posts/a-data-mixture-you-can-move/: no page overflow"
+    },
+    {
+      "test": "dark 768px /posts/a-data-mixture-you-can-move/: landmarks"
+    },
+    {
+      "test": "dark 768px /posts/a-data-mixture-you-can-move/: theme"
+    },
+    {
+      "test": "dark 768px /404/: no page overflow"
+    },
+    {
+      "test": "dark 768px /404/: landmarks"
+    },
+    {
+      "test": "dark 768px /404/: theme"
+    },
+    {
+      "test": "dark 1440px /: no page overflow"
+    },
+    {
+      "test": "dark 1440px /: landmarks"
+    },
+    {
+      "test": "dark 1440px /: theme"
+    },
+    {
+      "test": "dark 1440px /writing/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /writing/: landmarks"
+    },
+    {
+      "test": "dark 1440px /writing/: theme"
+    },
+    {
+      "test": "dark 1440px /about/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /about/: landmarks"
+    },
+    {
+      "test": "dark 1440px /about/: theme"
+    },
+    {
+      "test": "dark 1440px /search/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /search/: landmarks"
+    },
+    {
+      "test": "dark 1440px /search/: theme"
+    },
+    {
+      "test": "dark 1440px /lab/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /lab/: landmarks"
+    },
+    {
+      "test": "dark 1440px /lab/: theme"
+    },
+    {
+      "test": "dark 1440px /ja/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /ja/: landmarks"
+    },
+    {
+      "test": "dark 1440px /ja/: theme"
+    },
+    {
+      "test": "dark 1440px /ja/writing/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /ja/writing/: landmarks"
+    },
+    {
+      "test": "dark 1440px /ja/writing/: theme"
+    },
+    {
+      "test": "dark 1440px /ja/about/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /ja/about/: landmarks"
+    },
+    {
+      "test": "dark 1440px /ja/about/: theme"
+    },
+    {
+      "test": "dark 1440px /ja/search/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /ja/search/: landmarks"
+    },
+    {
+      "test": "dark 1440px /ja/search/: theme"
+    },
+    {
+      "test": "dark 1440px /ja/lab/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /ja/lab/: landmarks"
+    },
+    {
+      "test": "dark 1440px /ja/lab/: theme"
+    },
+    {
+      "test": "dark 1440px /posts/a-small-experiment/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /posts/a-small-experiment/: landmarks"
+    },
+    {
+      "test": "dark 1440px /posts/a-small-experiment/: theme"
+    },
+    {
+      "test": "dark 1440px /posts/a-readable-log/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /posts/a-readable-log/: landmarks"
+    },
+    {
+      "test": "dark 1440px /posts/a-readable-log/: theme"
+    },
+    {
+      "test": "dark 1440px /posts/a-reading-room/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /posts/a-reading-room/: landmarks"
+    },
+    {
+      "test": "dark 1440px /posts/a-reading-room/: theme"
+    },
+    {
+      "test": "dark 1440px /posts/give-the-equations-some-room/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /posts/give-the-equations-some-room/: landmarks"
+    },
+    {
+      "test": "dark 1440px /posts/give-the-equations-some-room/: theme"
+    },
+    {
+      "test": "dark 1440px /posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "dark 1440px /posts/typography-and-language/: theme"
+    },
+    {
+      "test": "dark 1440px /ja/posts/typography-and-language/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /ja/posts/typography-and-language/: landmarks"
+    },
+    {
+      "test": "dark 1440px /ja/posts/typography-and-language/: theme"
+    },
+    {
+      "test": "dark 1440px /posts/figures-on-a-small-screen/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /posts/figures-on-a-small-screen/: landmarks"
+    },
+    {
+      "test": "dark 1440px /posts/figures-on-a-small-screen/: theme"
+    },
+    {
+      "test": "dark 1440px /posts/a-data-mixture-you-can-move/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /posts/a-data-mixture-you-can-move/: landmarks"
+    },
+    {
+      "test": "dark 1440px /posts/a-data-mixture-you-can-move/: theme"
+    },
+    {
+      "test": "dark 1440px /404/: no page overflow"
+    },
+    {
+      "test": "dark 1440px /404/: landmarks"
+    },
+    {
+      "test": "dark 1440px /404/: theme"
+    },
+    {
+      "test": "theme button: changes to dark"
+    },
+    {
+      "test": "theme button: changes to light"
+    },
+    {
+      "test": "mobile navigation opens"
+    },
+    {
+      "test": "Escape closes mobile navigation"
+    },
+    {
+      "test": "filter research"
+    },
+    {
+      "test": "filter engineering"
+    },
+    {
+      "test": "filter notes"
+    },
+    {
+      "test": "filter all"
+    },
+    {
+      "test": "JSON search: populated results"
+    },
+    {
+      "test": "JSON search: empty state"
+    },
+    {
+      "test": "JSON search: clear query"
+    },
+    {
+      "test": "JSON search: Japanese"
+    },
+    {
+      "test": "mixture 100% edge case"
+    },
+    {
+      "test": "mixture reset"
+    },
+    {
+      "test": "mixture keyboard"
+    },
+    {
+      "test": "image zoom buttons"
+    },
+    {
+      "test": "image dialog opens"
+    },
+    {
+      "test": "Escape closes image dialog"
+    },
+    {
+      "test": "focus returns to image trigger"
+    },
+    {
+      "test": "contents opens"
+    },
+    {
+      "test": "contents links have targets",
+      "detail": [
+        {
+          "id": "start-with-the-question",
+          "ok": true
+        },
+        {
+          "id": "define-the-quantity",
+          "ok": true
+        },
+        {
+          "id": "keep-denominators-visible",
+          "ok": true
+        },
+        {
+          "id": "put-the-comparison-on-the-page",
+          "ok": true
+        },
+        {
+          "id": "preserve-the-trail",
+          "ok": true
+        },
+        {
+          "id": "leave-the-right-question-open",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "test": "footnote references have targets"
+    },
+    {
+      "test": "code blocks have copy controls"
+    },
+    {
+      "test": "denied clipboard handled"
+    },
+    {
+      "test": "clipboard mock receives code"
+    },
+    {
+      "test": "Japanese lang attribute"
+    },
+    {
+      "test": "Japanese translation destination"
+    },
+    {
+      "test": "wide equation scrolls locally",
+      "detail": [
+        {
+          "w": 335,
+          "scroll": 335
+        },
+        {
+          "w": 335,
+          "scroll": 405
+        },
+        {
+          "w": 335,
+          "scroll": 857
+        }
+      ]
+    },
+    {
+      "test": "no JS /: content"
+    },
+    {
+      "test": "no JS /: no overflow"
+    },
+    {
+      "test": "no JS /posts/a-small-experiment/: content"
+    },
+    {
+      "test": "no JS /posts/a-small-experiment/: no overflow"
+    },
+    {
+      "test": "no JS /ja/posts/typography-and-language/: content"
+    },
+    {
+      "test": "no JS /ja/posts/typography-and-language/: no overflow"
+    },
+    {
+      "test": "no JS /posts/a-data-mixture-you-can-move/: content"
+    },
+    {
+      "test": "no JS /posts/a-data-mixture-you-can-move/: no overflow"
+    },
+    {
+      "test": "no uncaught JavaScript errors"
+    }
+  ],
+  "failures": [],
+  "page_errors": []
+}

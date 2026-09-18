@@ -1,0 +1,34 @@
+---
+// Adapted from AstroPaper's metadata/theme layout. No client-side router is required.
+import site from "../config/site.mjs";
+import { headMeta, header, footer, themeInit } from "../lib/ui.mjs";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import "@fontsource/noto-sans-jp/400.css";
+import "@fontsource/noto-sans-jp/700.css";
+import "katex/dist/katex.min.css";
+interface Props { title?: string; description?: string; lang?: "en" | "ja"; sample?: boolean; post?: any; other?: any; }
+const { title = site.title, description = site.description, lang = "en", sample = false, post = null, other = null } = Astro.props;
+const path = Astro.url.pathname;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <Fragment set:html={headMeta({title,description,path,lang,sample,post,other})} />
+    <script is:inline set:html={themeInit} />
+    <link rel="stylesheet" href="/site.css" />
+    <slot name="head" />
+  </head>
+  <body>
+    <Fragment set:html={header(path,lang)} />
+    <slot />
+    <Fragment set:html={footer(lang)} />
+    <dialog id="image-viewer" aria-label={lang==='ja'?'画像の拡大表示':'Expanded image'}>
+      <button type="button" class="close-viewer">{lang==='ja'?'閉じる':'Close'} ×</button>
+      <img alt="" />
+    </dialog>
+    <script is:inline src="/site.js" defer />
+  </body>
+</html>

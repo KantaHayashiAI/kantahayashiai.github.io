@@ -1,0 +1,42 @@
+---
+title: "A data mixture you can move"
+slug: "a-data-mixture-you-can-move"
+description: "A small, local-only interaction for testing MDX and the boundary between explanation and demonstration."
+pubDatetime: "2026-09-18T08:38:00Z"
+lang: "en"
+kind: "engineering"
+tags: ["data", "interactive", "mdx"]
+sample: true
+draft: false
+featured: false
+---
+
+import MixtureExplorer from '../../components/MixtureExplorer.astro';
+
+Not every explanation needs a widget. Sometimes moving one quantity makes a constraint easier to understand than another paragraph would. This page tests that possibility with **illustrative percentages only**.
+
+## A fixed budget
+
+Imagine dividing a token budget among three sources: web text, books, and code. In this toy example, the shares must sum to one.
+
+$$
+w_{\mathrm{web}}+w_{\mathrm{books}}+w_{\mathrm{code}}=1.
+$$
+
+<MixtureExplorer />
+
+The display changes in your browser. It makes no API calls, stores no input, and does not predict model performance. The sliders are ordinary HTML range inputs, so they also work with a keyboard.
+
+## A constraint, not a recommendation
+
+Increasing the web share reduces the room available to the other sources. That is arithmetic, not an argument for a particular dataset. The real problem would require evidence about quality, coverage, deduplication, and the model being trained.
+
+### Try an edge case
+
+Move Web to 100%. Books and Code must both become zero. Then use Reset to recover the original 50/30/20 example.
+
+## Keep the baseline readable
+
+Without JavaScript, the initial values and the surrounding explanation remain on the page. The rest of this site does not need a client-side framework just because one article contains a small interaction.
+
+The [engineering specimen](/posts/a-readable-log/) tests code blocks; [the research specimen](/posts/a-small-experiment/) tests the argument around them.

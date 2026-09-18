@@ -1,0 +1,12 @@
+---
+import Layout from "./Layout.astro";
+import { articleStart, articleEnd } from "../lib/ui.mjs";
+import { postPath } from "../lib/content.mjs";
+interface Props { post: any; headings: any[]; other?: any; related?: any[]; }
+const { post, headings, other = null, related = [] } = Astro.props;
+---
+<Layout title={post.data.title} description={post.data.description} lang={post.data.lang} sample={post.data.sample} post={post} other={other ? {lang: other.data.lang, path:postPath(other)} : null}>
+  <Fragment set:html={articleStart(post, headings, other)} />
+  <slot />
+  <Fragment set:html={articleEnd(post, related)} />
+</Layout>

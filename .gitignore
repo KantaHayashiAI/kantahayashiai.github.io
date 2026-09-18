@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+.DS_Store
+.preview/
+qa/screenshots/
+public/og/posts/
+
+output/
+__pycache__/
+*.pyc

@@ -1,0 +1,12 @@
+---
+import { getCollection, render } from "astro:content";
+import PostLayout from "../../layouts/PostLayout.astro";
+import { visiblePosts, translationOf } from "../../lib/content.mjs";
+export async function getStaticPaths() {
+ const posts=visiblePosts(await getCollection("posts"));
+ return posts.filter(p=>p.data.lang==="en").map(post=>({params:{slug:post.data.slug},props:{post,other:translationOf(post,posts),related:posts.filter(p=>p.id!==post.id&&p.data.lang===post.data.lang&&p.data.kind===post.data.kind)}}));
+}
+const {post,other,related}=Astro.props;
+const {Content,headings}=await render(post);
+---
+<PostLayout post={post} headings={headings} other={other} related={related}><Content /></PostLayout>

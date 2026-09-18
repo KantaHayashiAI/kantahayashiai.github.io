@@ -1,0 +1,22 @@
+{
+  "node_tests": 32,
+  "browser_fixture_assertions": 499,
+  "framework_build": "not verified: registry inaccessible",
+  "deploy": "not performed",
+  "source_syntax_checked": [
+    "src/lib/content.mjs",
+    "src/lib/ui.mjs",
+    "src/utils/getSortedPosts.mjs",
+    "src/utils/postFilter.mjs",
+    "src/config/site.mjs",
+    "scripts/check-dist.mjs",
+    "scripts/new-post.mjs",
+    "scripts/validate.mjs",
+    "scripts/read-content.mjs",
+    "scripts/build-og.mjs",
+    "public/site.js"
+  ],
+  "fixture_relative_links": "passed",
+  "documentation_relative_links": "passed",
+  "archive_fonts": "none"
+}

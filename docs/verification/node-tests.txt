@@ -1,0 +1,202 @@
+TAP version 13
+# Subtest: escape arbitrary title markup
+ok 1 - escape arbitrary title markup
+  ---
+  duration_ms: 1.445781
+  type: 'test'
+  ...
+# Subtest: script-closing text cannot escape JSON-LD
+ok 2 - script-closing text cannot escape JSON-LD
+  ---
+  duration_ms: 0.15728
+  type: 'test'
+  ...
+# Subtest: absolute links supported
+ok 3 - absolute links supported
+  ---
+  duration_ms: 0.181727
+  type: 'test'
+  ...
+# Subtest: local links supported
+ok 4 - local links supported
+  ---
+  duration_ms: 0.126465
+  type: 'test'
+  ...
+# Subtest: javascript URLs rejected
+ok 5 - javascript URLs rejected
+  ---
+  duration_ms: 0.10176
+  type: 'test'
+  ...
+# Subtest: protocol-relative URLs rejected
+ok 6 - protocol-relative URLs rejected
+  ---
+  duration_ms: 0.084745
+  type: 'test'
+  ...
+# Subtest: English post URL
+ok 7 - English post URL
+  ---
+  duration_ms: 0.202276
+  type: 'test'
+  ...
+# Subtest: Japanese post URL
+ok 8 - Japanese post URL
+  ---
+  duration_ms: 0.087108
+  type: 'test'
+  ...
+# Subtest: Japanese home URL
+ok 9 - Japanese home URL
+  ---
+  duration_ms: 0.361581
+  type: 'test'
+  ...
+# Subtest: drafts never become public
+ok 10 - drafts never become public
+  ---
+  duration_ms: 0.77728
+  type: 'test'
+  ...
+# Subtest: scheduled articles stay hidden
+ok 11 - scheduled articles stay hidden
+  ---
+  duration_ms: 0.148838
+  type: 'test'
+  ...
+# Subtest: sample shows only during preview
+ok 12 - sample shows only during preview
+  ---
+  duration_ms: 0.086807
+  type: 'test'
+  ...
+# Subtest: sample does not show live
+ok 13 - sample does not show live
+  ---
+  duration_ms: 0.068921
+  type: 'test'
+  ...
+# Subtest: real articles show live
+ok 14 - real articles show live
+  ---
+  duration_ms: 0.060499
+  type: 'test'
+  ...
+# Subtest: RSS always omits sample articles
+ok 15 - RSS always omits sample articles
+  ---
+  duration_ms: 0.100377
+  type: 'test'
+  ...
+# Subtest: sort uses last modification when supplied
+ok 16 - sort uses last modification when supplied
+  ---
+  duration_ms: 0.178833
+  type: 'test'
+  ...
+# Subtest: translation uses explicit pairing only
+ok 17 - translation uses explicit pairing only
+  ---
+  duration_ms: 0.11561
+  type: 'test'
+  ...
+# Subtest: unpaired article has no false translation
+ok 18 - unpaired article has no false translation
+  ---
+  duration_ms: 0.064294
+  type: 'test'
+  ...
+# Subtest: reading estimate is at least one minute
+ok 19 - reading estimate is at least one minute
+  ---
+  duration_ms: 0.382491
+  type: 'test'
+  ...
+# Subtest: reading estimate includes Japanese
+ok 20 - reading estimate includes Japanese
+  ---
+  duration_ms: 0.370514
+  type: 'test'
+  ...
+# Subtest: head contains canonical and noindex in preview
+ok 21 - head contains canonical and noindex in preview
+  ---
+  duration_ms: 0.250077
+  type: 'test'
+  ...
+# Subtest: head escapes title injection
+ok 22 - head escapes title injection
+  ---
+  duration_ms: 0.11574
+  type: 'test'
+  ...
+# Subtest: post social image uses per-post route
+ok 23 - post social image uses per-post route
+  ---
+  duration_ms: 0.378856
+  type: 'test'
+  ...
+# Subtest: header has accessible name and skip link
+ok 24 - header has accessible name and skip link
+  ---
+  duration_ms: 0.174156
+  type: 'test'
+  ...
+# Subtest: article has one main and article boundary
+ok 25 - article has one main and article boundary
+  ---
+  duration_ms: 11.931595
+  type: 'test'
+  ...
+# Subtest: test corpus exists, is explicit, and has no Jev article
+ok 26 - test corpus exists, is explicit, and has no Jev article
+  ---
+  duration_ms: 1.790627
+  type: 'test'
+  ...
+# Subtest: source has an actual draft sentinel
+ok 27 - source has an actual draft sentinel
+  ---
+  duration_ms: 0.569255
+  type: 'test'
+  ...
+# Subtest: both languages have test content
+ok 28 - both languages have test content
+  ---
+  duration_ms: 0.419566
+  type: 'test'
+  ...
+# Subtest: all visible demo paths are unique
+ok 29 - all visible demo paths are unique
+  ---
+  duration_ms: 0.521866
+  type: 'test'
+  ...
+# Subtest: actual drafts are absent from home
+ok 30 - actual drafts are absent from home
+  ---
+  duration_ms: 1.421545
+  type: 'test'
+  ...
+# Subtest: all samples disappear in live mode
+ok 31 - all samples disappear in live mode
+  ---
+  duration_ms: 0.470901
+  type: 'test'
+  ...
+# Subtest: frontmatter parser returns content separately
+ok 32 - frontmatter parser returns content separately
+  ---
+  duration_ms: 0.103352
+  type: 'test'
+  ...
+1..32
+# tests 32
+# suites 0
+# pass 32
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 95.546132

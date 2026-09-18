@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="540" viewBox="0 0 1080 540" role="img" aria-labelledby="title desc">
+<title id="title">Illustrative mixture scores</title><desc id="desc">Invented values: A 0.24, B 0.21, C 0.23.</desc>
+<rect width="1080" height="540" fill="#fafaf8"/>
+<g font-family="Inter,Arial,sans-serif" fill="#26322e"><text x="70" y="60" font-size="18" font-weight="600" letter-spacing="2">LAYOUT FIXTURE / NOT A RESULT</text><text x="70" y="103" font-size="31" font-weight="600">A small comparison, kept readable.</text>
+<g stroke="#d7dbd4" stroke-width="1"><path d="M130 420H990M130 336H990M130 252H990M130 168H990"/></g>
+<g font-size="19" fill="#69726d"><text x="83" y="427">0.0</text><text x="83" y="343">0.1</text><text x="83" y="259">0.2</text><text x="83" y="175">0.3</text></g>
+<rect x="230" y="218.4" width="130" height="201.6" rx="2" fill="#acb6aa"/><rect x="510" y="243.6" width="130" height="176.4" rx="2" fill="#256257"/><rect x="790" y="226.8" width="130" height="193.2" rx="2" fill="#acb6aa"/>
+<g font-size="24" text-anchor="middle" font-weight="600"><text x="295" y="199">0.24</text><text x="575" y="224">0.21</text><text x="855" y="207">0.23</text><text x="295" y="458">A</text><text x="575" y="458">B</text><text x="855" y="458">C</text></g><text x="540" y="509" text-anchor="middle" font-size="17" fill="#69726d">Three fictional mixtures · Lower is better for this illustrative score</text></g></svg>

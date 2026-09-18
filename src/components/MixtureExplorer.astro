@@ -1,0 +1,12 @@
+---
+// A tiny MDX island without a framework or API call. Behavior lives in public/site.js.
+---
+<section class="mixture-explorer" data-mixture-explorer aria-label="Illustrative data mixture">
+  <div class="demo-heading"><span class="section-kicker">INTERACTIVE / TOY EXAMPLE</span><strong>A fixed token budget</strong></div>
+  <p>Move the sliders. The total stays at 100%. This does not estimate model quality.</p>
+  <label>Web <output data-web-output>50%</output><input aria-label="Web share" data-web type="range" min="0" max="100" value="50" step="1" /></label>
+  <label>Code <output data-code-output>20%</output><input aria-label="Code share" data-code type="range" min="0" max="50" value="20" step="1" /></label>
+  <div class="mixture-bar" aria-hidden="true"><span data-web-bar style="width:50%"></span><span data-books-bar style="width:30%"></span><span data-code-bar style="width:20%"></span></div>
+  <p class="mixture-summary" role="status" aria-live="polite">Web 50% · Books 30% · Code 20%</p>
+  <button type="button" class="small-button" data-mixture-reset>Reset</button>
+</section>

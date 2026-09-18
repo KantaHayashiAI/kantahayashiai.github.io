@@ -1,0 +1,13 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import site from "../../config/site.mjs";
+import {visiblePosts} from "../../lib/content.mjs";
+import {about,searchPage,lab} from "../../lib/ui.mjs";
+export function getStaticPaths() { return ["about","search",...(site.stage==="preview"?["lab"]:[])].map(page=>({params:{page}})); }
+const {page}=Astro.params;
+const posts=visiblePosts(await getCollection("posts"));
+const content=page==="about"?about("ja"):page==="search"?searchPage("ja"):lab(posts,"ja");
+const title=page==="about"?"紹介":page==="search"?"検索":"表示チェック";
+---
+<Layout title={title} lang="ja"><Fragment set:html={content} /></Layout>
