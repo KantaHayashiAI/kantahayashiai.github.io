@@ -59,7 +59,7 @@ export function searchPage(lang='en') {
 export function about(lang='en') {
  const ja=lang==='ja';
  const content=ja
-  ? `<p>東京大学で学びながら、言語モデルの開発に取り組んでいます。関心があるのは、モデルの能力をどう作り、どう確かめるか。事前学習、学習データ、評価について考えています。</p><p>このサイトは、長い実験記録も短いメモも置ける場所にしたいと思っています。コードを書いて確かめたことを、何を試し、何が分かり、何がまだ分からないのかと一緒に残していきます。</p><h2>研究の周りに</h2><p>本、映画、漫画、アニメ、批評も好きです。研究の話だけに閉じず、それらについて考える余白も残しておきたいと思っています。</p><h2>このサイトについて</h2><p>記事は英語を中心に、日本語でも書きます。翻訳がある記事には、切り替えリンクを付けています。</p><p>AstroPaperを参考に、文字中心の小さな読書用レイアウトを作っています。広告やアクセス解析は入れていません。</p><p><a href="${site.github}">GitHub: KantaHayashiAI ↗</a></p>`
+  ? `<p>東京大学の学生で、言語モデルについて考えています。</p><p><a href="${site.github}">GitHub</a> / <a href="https://x.com/HayashiKantaAI">X</a> / <a href="mailto:kantahayashiai@gmail.com">Email</a></p>`
   : `<p>I'm a student at the University of Tokyo, thinking about language models.</p><p><a href="${site.github}">GitHub</a> / <a href="https://x.com/KantaHayashiAI">X</a> / <a href="mailto:kantahayashiai@gmail.com">Email</a></p>`;
  return `<main id="main" class="wrap page-main"><div class="page-intro"><h1>${ja?'自己紹介':'About'}</h1><p>${ja?'林 寛太 / Kanta Hayashi':'Kanta Hayashi / 林 寛太'}</p></div><div class="prose about-prose">${content}</div></main>`;
 }
