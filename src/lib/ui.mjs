@@ -39,7 +39,7 @@ export function home(posts,lang="en") {
  const ja=lang==='ja';
  const local=posts.filter(p=>p.data.lang===lang);
  const display=(local.length?local:posts).slice(0,6);
- return `<main id="main"><section class="intro wrap"><h1>${ja?'LLMとその他':'Language models & other notes.'}</h1><p>${ja?'LLMについて考え中……':'Thinking about LLMs.'}</p><div class="intro-links"><a href="${site.github}">GitHub ↗</a><a href="/rss.xml">RSS</a><a href="${pagePath('about',lang)}">${ja?'自己紹介':'About me'}</a></div></section>${previewNotice(lang)}<section class="writing-section wrap" aria-labelledby="recent-heading"><div class="section-heading"><h2 id="recent-heading">${ja?'最近の記事':'Recent posts'}</h2><a href="${pagePath('writing',lang)}">${ja?'すべての記事':'All posts'} ↗</a></div><div class="post-list">${display.map(p=>postCard(p,lang)).join('')}</div>${display.length?'':`<p class="empty-state">${ja?'最初の記事を準備中です。':'No published posts yet.'}</p>`}</section></main>`;
+ return `<main id="main"><section class="intro wrap"><h1>${ja?'LLMとその他':'Language models & other notes.'}</h1><p>${ja?'LLMについて考え中……':'Thinking about LLMs.'}</p><div class="intro-links"><a href="${ja?'https://x.com/HayashiKantaAI':'https://x.com/KantaHayashiAI'}">X</a><a href="${site.github}">GitHub</a><a href="mailto:kantahayashiai@gmail.com">Email</a></div></section>${previewNotice(lang)}<section class="writing-section wrap" aria-labelledby="recent-heading"><div class="section-heading"><h2 id="recent-heading">${ja?'最近の記事':'Recent posts'}</h2><a href="${pagePath('writing',lang)}">${ja?'すべての記事':'All posts'} ↗</a></div><div class="post-list">${display.map(p=>postCard(p,lang)).join('')}</div>${display.length?'':`<p class="empty-state">${ja?'最初の記事を準備中です。':'No published posts yet.'}</p>`}</section></main>`;
 }
 export function writing(posts,lang="en") {
  const ja=lang==='ja';return `<main id="main" class="wrap page-main"><div class="page-intro"><h1>${ja?'記事':'Writing'}</h1><p>${ja?'研究の記録、実装の話、まだ名前のない考え。':'Experiments, implementation notes, and occasional detours.'}</p></div>${site.stage==='preview'?`<p class="inline-notice">${ja?'この一覧は表示確認用のテスト記事です。':'This preview contains test articles, not published research.'}</p>`:''}<nav class="filters" aria-label="${ja?'記事の種類':'Filter writing'}">${[['all',ja?'すべて':'All'],...Object.entries(names[lang])].map(([k,v])=>`<button type="button" data-filter="${k}" aria-pressed="${k==='all'}">${v}</button>`).join('')}</nav><p class="filter-status sr-only" role="status"></p><div class="post-list">${posts.map(p=>postCard(p,lang)).join('')}</div><p class="no-posts" hidden>${ja?'該当する記事はありません。':'No notes in this category yet.'}</p></main>`;
@@ -59,8 +59,8 @@ export function searchPage(lang='en') {
 export function about(lang='en') {
  const ja=lang==='ja';
  const content=ja
-  ? `<p>東京大学の学生で、言語モデルについて考えています。</p><p><a href="${site.github}">GitHub</a> / <a href="https://x.com/HayashiKantaAI">X</a> / <a href="mailto:kantahayashiai@gmail.com">Email</a></p>`
-  : `<p>I'm a student at the University of Tokyo, thinking about language models.</p><p><a href="${site.github}">GitHub</a> / <a href="https://x.com/KantaHayashiAI">X</a> / <a href="mailto:kantahayashiai@gmail.com">Email</a></p>`;
+  ? `<p>東京大学の学生で、言語モデルについて考えています。</p><p><a href="https://x.com/HayashiKantaAI">X</a> / <a href="${site.github}">GitHub</a> / <a href="mailto:kantahayashiai@gmail.com">Email</a></p>`
+  : `<p>I'm a student at the University of Tokyo, thinking about language models.</p><p><a href="https://x.com/KantaHayashiAI">X</a> / <a href="${site.github}">GitHub</a> / <a href="mailto:kantahayashiai@gmail.com">Email</a></p>`;
  return `<main id="main" class="wrap page-main"><div class="page-intro"><h1>${ja?'自己紹介':'About'}</h1><p>${ja?'林 寛太 / Kanta Hayashi':'Kanta Hayashi / 林 寛太'}</p></div><div class="prose about-prose">${content}</div></main>`;
 }
 export function lab(posts,lang='en') {
