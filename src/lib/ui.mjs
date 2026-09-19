@@ -4,7 +4,8 @@ export const names={en:{research:"Research",engineering:"Engineering",notes:"Not
 const icons={search:'<circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/>',sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/>',arrow:'<path d="M5 12h14M13 6l6 6-6 6"/>',external:'<path d="M8 5H5v14h14v-3M12 5h7v7M10 14l9-9"/>',moon:'<path d="M20.5 14a8.8 8.8 0 0 1-10.5-10.5A8.8 8.8 0 1 0 20.5 14Z"/>'};
 export function icon(name) {return `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name]??icons.arrow}</svg>`;}
 /** @param {{title?:string,description?:string,path?:string,lang?:string,sample?:boolean,post?:any,other?:any}} options */
-export function headMeta({title=site.title,description=site.description,path="/",lang="en",sample=false,post=null,other=null}={}) {
+export function headMeta({title=site.title,description,path="/",lang="en",sample=false,post=null,other=null}={}) {
+ description ??= lang === "ja" ? site.descriptionJa : site.description;
  const canonical=new URL(path,site.url).href;
  const d=post?.data??post;
  const og=d?.ogImage??(d?`/og/posts/${d.lang}-${d.slug}.png`:"/og/default.png");

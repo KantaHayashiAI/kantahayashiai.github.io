@@ -1,10 +1,11 @@
 /** Public site configuration. Never put credentials or private biographical details here. */
-/** @type {{title:string,nameJa:string,url:string,description:string,stage:"preview"|"live",timezone:string,github:string,repository:string,copyrightYear:number}} */
+/** @type {{title:string,nameJa:string,url:string,description:string,descriptionJa:string,stage:"preview"|"live",timezone:string,github:string,repository:string,copyrightYear:number}} */
 const config = {
   title: "Kanta Hayashi",
   nameJa: "林 寛太",
   url: "https://kantahayashiai.github.io/",
-  description: "Notes on language models, training data, and evaluation — with room for the things around them.",
+  description: "Thinking about LLMs.",
+  descriptionJa: "LLMについて考え中……",
   // preview: sample articles are visible, the entire site is noindex, RSS is empty.
   // live: sample articles are not built or listed; only real, non-draft posts are published.
   stage: "live",

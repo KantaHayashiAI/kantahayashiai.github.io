@@ -64,12 +64,7 @@ Besides the number die (400 trials), I ran the same test with a colored die (200
 
 "Reported probability" below means the value Choice gave to the option it selected (`probabilities[choice]`). It is a different field from `confidence`, although for the number die the mean `confidence` was close, at 0.796. (On how `confidence` is computed, see Stanislav Yurin's [Is Jev confident?](https://bernoulli.app/articles/is-jev-confident), which reconstructs the formula from about 740,000 answers: it is the top probability rescaled by the number of options. The same formula fits my records.)
 
-| Draw | Trials | Chance level | Mean reported probability | Observed accuracy |
-| :--- | ---: | ---: | ---: | ---: |
-| Six-sided die (numbers) | 400 | 16.7% | **82.9%** | 19.0% (76) |
-| Six-sided die (colors) | 200 | 16.7% | **76.4%** | 16.0% (32) |
-| Four-way spinner | 200 | 25.0% | **90.2%** | 26.5% (53) |
-| Coin toss | 200 | 50.0% | **92.0%** | 52.0% (104) |
+![Jev's reported probability vs. accuracy on fair random draws (Choice). Mean reported probability was 82.9%, 76.4%, 90.2% and 92.0%, while observed accuracy stayed at chance.](../../assets/images/figure1_dice_en.png)
 
 On the number die, Jev chose "1" in all 400 trials, and it gave that choice a probability of **82.9%** on average. The actual hit rate was 19.0% (76/400), almost exactly the theoretical 16.7%.
 
@@ -104,12 +99,7 @@ On these inputs, calibration was badly off. Across the 400 trials, the reported 
 
 This could be a quirk of Choice, which has to pick one out of several options. To check, I also tested **Noul**, the question type for yes/no propositions (`boolean` in the Vercel AI SDK). The questions were like "Did the die show 1?" or "Was this particular destination selected?", and the model returns the probability that the statement is true. As before, the actual roll or assignment was hidden. I ran 60 cases per condition.
 
-| Statement | True probability | Mean reported by Noul |
-| :--- | ---: | ---: |
-| One specific destination out of 4 | 25.0% | **24.7%** |
-| Face 1 of a fair six-sided die | 16.7% | **19.2%** |
-| One specific destination out of 12 | 8.3% | **17.3%** |
-| One specific destination out of 20 | 5.0% | **15.0%** |
+![Jev's reported probability vs. true probability, by number of options (Noul). Close to the truth for 2 to 4 options, and between 15% and 17% from 8 options up.](../../assets/images/figure2_noul_en.png)
 
 In some cases it returned values quite close to the truth: 19.2% against 16.7% for the die, and 24.7% against 25.0% for the four-way case.
 
@@ -135,9 +125,9 @@ We wanted to pass the document's "30% risk" on to the next step. Just by going t
 
 I then varied the stated probability step by step and plotted the result.
 
-![Stated probability in the document versus the probability Jev reported. Choice reported a mean of 6.6% for a stated 45%, and 95.9% for a stated 55%.](https://raw.githubusercontent.com/KantaHayashiAI/jev-does-not-play-dice/main/figures/figure3_forecast_en.png)
+![Stated probability in the document versus the probability Jev reported. Choice reported a mean of 6.6% for a stated 45%, and 95.9% for a stated 55%.](../../assets/images/figure3_forecast_en.png)
 
-> **About the figure**: the horizontal axis is the risk probability stated in the document (shortage, missed target, and so on). The vertical axis is the probability Jev returned. Each point is the mean of 12 documents (4 domains x 3 conditions). The black line marks where the returned value equals the stated value.
+> **About the figure**: the horizontal axis is the risk probability stated in the document (shortage, missed target, and so on). The vertical axis is the probability Jev returned. Each point is the mean of 12 documents (4 domains x 3 conditions). The gray line marks where the returned value equals the stated value.
 
 
 - **Stated 45%**: Choice reported a mean of **6.6%**

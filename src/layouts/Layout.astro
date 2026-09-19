@@ -10,7 +10,7 @@ import "@fontsource/noto-sans-jp/400.css";
 import "@fontsource/noto-sans-jp/700.css";
 import "katex/dist/katex.min.css";
 interface Props { title?: string; description?: string; lang?: "en" | "ja"; sample?: boolean; post?: any; other?: any; }
-const { title = site.title, description = site.description, lang = "en", sample = false, post = null, other = null } = Astro.props;
+const { title = site.title, description, lang = "en", sample = false, post = null, other = null } = Astro.props;
 const path = Astro.url.pathname;
 ---
 <!doctype html>

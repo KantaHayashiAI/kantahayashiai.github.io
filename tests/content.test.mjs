@@ -26,6 +26,17 @@ test('unpaired article has no false translation',()=>assert.equal(translationOf(
 test('reading estimate is at least one minute',()=>assert.equal(readingMinutes(''),1));
 test('reading estimate includes Japanese',()=>assert.ok(readingMinutes('あ'.repeat(1200))>=3));
 test('live article metadata is indexable',()=>{const s=headMeta({path:'/posts/a/'});assert.ok(s.includes('https://kantahayashiai.github.io/posts/a/'));assert.ok(s.includes('content="index, follow"'))});
+test('default descriptions use the page language in metadata and OG',()=>{
+ for(const [lang,description] of [['en','Thinking about LLMs.'],['ja','LLMについて考え中……']]){
+  const s=headMeta({lang});
+  assert.ok(s.includes('<meta name="description" content="'+description+'">'));
+  assert.ok(s.includes('<meta property="og:description" content="'+description+'">'));
+ }
+});
+test('explicit article description overrides localized defaults',()=>{
+ const s=headMeta({lang:'ja',description:'Keep the article description.'});
+ assert.ok(s.includes('<meta name="description" content="Keep the article description.">'));
+});
 test('head escapes title injection',()=>assert.ok(headMeta({title:'<script>bad</script>'}).includes('&lt;script&gt;')));
 test('post social image uses per-post route',()=>assert.ok(headMeta({post:p()}).includes('/og/posts/en-a.png')));
 test('header has accessible name and skip link',()=>{const h=header();assert.ok(h.includes('Skip to content'));assert.ok(h.includes('aria-label="Search"'))});
