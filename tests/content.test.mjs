@@ -25,15 +25,15 @@ test('translation uses explicit pairing only',()=>{const a=p({translationKey:'x'
 test('unpaired article has no false translation',()=>assert.equal(translationOf(p(),[p({lang:'ja'})]),null));
 test('reading estimate is at least one minute',()=>assert.equal(readingMinutes(''),1));
 test('reading estimate includes Japanese',()=>assert.ok(readingMinutes('あ'.repeat(1200))>=3));
-test('head contains canonical and noindex in preview',()=>{const s=headMeta({path:'/posts/a/'});assert.ok(s.includes('https://kantahayashiai.github.io/posts/a/'));assert.ok(s.includes('noindex'))});
+test('live article metadata is indexable',()=>{const s=headMeta({path:'/posts/a/'});assert.ok(s.includes('https://kantahayashiai.github.io/posts/a/'));assert.ok(s.includes('content="index, follow"'))});
 test('head escapes title injection',()=>assert.ok(headMeta({title:'<script>bad</script>'}).includes('&lt;script&gt;')));
 test('post social image uses per-post route',()=>assert.ok(headMeta({post:p()}).includes('/og/posts/en-a.png')));
 test('header has accessible name and skip link',()=>{const h=header();assert.ok(h.includes('Skip to content'));assert.ok(h.includes('aria-label="Search"'))});
 test('article has one main and article boundary',()=>{const h=articleStart(p(),[],null)+'<p>x</p>'+articleEnd(p());assert.equal((h.match(/<main\b/g)||[]).length,1);assert.equal((h.match(/<article\b/g)||[]).length,1);assert.ok(h.endsWith('</main>'))});
-test('test corpus exists, is explicit, and has no Jev article',()=>{const ps=readPosts();assert.ok(ps.length>=8);assert.ok(ps.every(x=>x.data.sample));assert.ok(ps.every(x=>!x.body.includes('Jev')))});
+test('sample corpus remains explicitly marked',()=>{const ps=readPosts().filter(x=>x.data.sample);assert.ok(ps.length>=8);assert.ok(ps.every(x=>!x.body.includes('Jev')))});
 test('source has an actual draft sentinel',()=>assert.ok(readPosts().some(p=>p.data.draft&&p.data.slug==='draft-sentinel')));
 test('both languages have test content',()=>{const ps=readPosts();assert.ok(ps.some(p=>p.data.lang==='ja'));assert.ok(ps.some(p=>p.data.lang==='en'))});
 test('all visible demo paths are unique',()=>{const ps=visiblePosts(readPosts(),{now});assert.equal(new Set(ps.map(postPath)).size,ps.length)});
 test('actual drafts are absent from home',()=>assert.ok(!home(visiblePosts(readPosts(),{now})).includes('DRAFT MUST')));
-test('all samples disappear in live mode',()=>assert.equal(visiblePosts(readPosts(),{stage:'live',now}).length,0));
+test('live publication includes Jev and excludes samples and drafts',()=>{const ps=visiblePosts(readPosts(),{stage:'live',now:Date.parse('2026-09-20T12:00:00Z')});assert.ok(ps.some(p=>p.data.slug==='jev-does-not-play-dice'));assert.ok(ps.every(p=>!p.data.sample&&!p.data.draft))});
 test('frontmatter parser returns content separately',()=>{const s=parseSource('---\ntitle: "abc"\nsample: true\n---\nhello');assert.equal(s.data.title,'abc');assert.equal(s.body.trim(),'hello')});
