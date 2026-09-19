@@ -30,5 +30,6 @@ const path = Astro.url.pathname;
       <img alt="" />
     </dialog>
     <script is:inline src="/site.js" defer />
+    {import.meta.env.PROD && <Fragment set:html={'<script data-goatcounter="https://kantahayashi.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'} />}
   </body>
 </html>
