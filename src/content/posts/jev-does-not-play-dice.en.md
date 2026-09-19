@@ -155,7 +155,7 @@ The problem is when someone treats the returned number as a well calibrated prob
 When building Jev or any other decision model into a product, I want to keep these points in mind.
 
 1. **Look at calibration, not only accuracy**
-   Measure, on validation data, whether the model is actually right as often as its high probabilities say.
+   Group your validation cases by the probability the model gave. For each group, compare the average probability the model gave with how often it was actually right. If the two roughly match in every group, the probabilities are calibrated. All you need is the same labeled data you would use to measure accuracy.
 2. **Mix edge cases with missing information into the test data**
    Do not test only cases where the answer is obvious. Deliberately include cases where the information needed for the decision is hidden, and check whether the model reports its uncertainty.
 3. **Do not let the model overwrite numbers from the source document**
