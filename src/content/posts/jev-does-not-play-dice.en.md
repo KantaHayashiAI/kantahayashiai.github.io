@@ -13,16 +13,15 @@ featured: true
 
 I asked [Jev](https://typesafe.ai/), TypeSafe AI's new decision model, to call a fair die roll it could not see. Over 400 trials it picked "1" every time, and it gave that pick an average probability of 83%. It was right 19% of the time, which is chance.
 
-Jev's main selling point is that its probabilities are calibrated. TypeSafe's [documentation](https://docs.typesafe.ai/introduction/machine-learning-primer) spells out what that means: for a well-calibrated model, outcomes given a probability of 0.8 should occur about 80% of the time. Its [website](https://typesafe.ai/) recommends putting thresholds on these numbers to decide when software acts on its own and when it hands off to a person. As far as I could find, nobody outside TypeSafe had measured whether the probabilities really behave that way. So I started with the simplest input where the true probability is known exactly: a fair die.
+Jev's main selling point is that its probabilities are calibrated. TypeSafe's [documentation](https://docs.typesafe.ai/introduction/machine-learning-primer) spells out what that means: for a well-calibrated model, outcomes given a probability of 0.8 should occur about 80% of the time. Its [website](https://typesafe.ai/) recommends putting thresholds on these numbers to decide when software acts on its own and when it hands off to a person. I wanted to check these numbers on an input where the true probability is known exactly, so I started with a fair die.
 
-I am not saying Jev is useless. It is fast and cheap, and I think it is an excellent product. On synthetic tasks closer to the official demos, I did not see errors this extreme. The point is narrower: check these probabilities on your own task before you build on them.
+I am not saying Jev is useless. It is fast and cheap, and I think it is an excellent product. Archer Hume found its probabilities [well calibrated on a 1,200-item MMLU sample](https://archerhume.com/posts/jevs-architecture-unmasked/), and on synthetic tasks closer to the official demos I did not see errors this extreme either. The point is narrower: check these probabilities on your own task before you build on them.
 
 ---
 
 ## Testing with a fair die
 
-The issue is not that Jev failed to guess the roll. Nobody can.
-**The issue is that, with no information to go on, it failed to report that uncertainty as a probability.**
+Nobody can guess a fair die, so the 19% is not the problem. **The problem is the 83%: with no information to go on, Jev did not report that uncertainty as a probability.**
 
 ### Setup
 
@@ -85,7 +84,7 @@ choice: 1
 probabilities: 1/6 (about 16.7%) for each option
 ```
 
-**Picking one option and estimating the probability that the option is correct are two completely different jobs.**
+**Picking one option and estimating the probability that the option is correct are two different jobs.**
 
 To build a probability into a system or a business decision, you need a correspondence: when you collect the events that were predicted "80% likely", about 80% of them should actually happen. In statistics and machine learning this is called [calibration](https://proceedings.mlr.press/v70/guo17a.html).
 
@@ -150,9 +149,11 @@ Jev was not asked to decide whether to act. **The rule is the same. Only the sca
 
 As I said at the top, none of this means Jev's probabilities are useless. There are surely many cases where Jev is useful.
 
-The problem is when someone treats the returned number as a well calibrated probability that can be trusted, skips proper validation, lowers their safety margins, or connects it directly to threshold-based branching.
+Hume's MMLU result and the dice result do not contradict each other. Exam questions test whether a model knows when a question is hard for it. The dice test whether it knows when the answer cannot be known at all. Being good at the first does not guarantee the second.
 
-When building Jev or any other decision model into a product, I want to keep these points in mind.
+The problem is when someone takes the returned number as a probability they can trust, and skips validation.
+
+TypeSafe itself asks users to validate performance in their own domain in its [official skill](https://github.com/typesafe-ai/skills/blob/65a39f393687675ce170e6094757de20370365b9/skills/typesafe-ai/SKILL.md), and [Vercel's announcement](https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway) recommends calibrating probabilities and confidence against real labeled data. When building Jev or any other decision model into a product, I want to keep these points in mind.
 
 1. **Look at calibration, not only accuracy**
    Group your validation cases by the probability the model gave. For each group, compare the average probability the model gave with how often it was actually right. If the two roughly match in every group, the probabilities are calibrated. All you need is the same labeled data you would use to measure accuracy.
