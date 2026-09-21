@@ -9,6 +9,7 @@ tags: ["Jev", "calibration", "language-models"]
 draft: false
 sample: false
 featured: true
+ogImage: "/images/jev_thumbnail_dark_en_1200x630.png"
 ---
 
 I asked [Jev](https://typesafe.ai/), TypeSafe AI's new decision model, to call a fair die roll it could not see. Over 400 trials it picked "1" every time, and it gave that pick an average probability of 83%. It was right 19% of the time, which is chance.
