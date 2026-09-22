@@ -17,6 +17,7 @@ const path = Astro.url.pathname;
 <html lang={lang}>
   <head>
     <Fragment set:html={headMeta({title,description,path,lang,sample,post,other})} />
+    <Fragment set:html={'<meta name="google-site-verification" content="MpN9J4CSU90P-dRN9pDSocVxcI4Hm4_he7_bI6O1Hvs" />'} />
     <script is:inline set:html={themeInit} />
     <link rel="stylesheet" href="/site.css" />
     <slot name="head" />
