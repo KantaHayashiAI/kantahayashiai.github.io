@@ -1,5 +1,6 @@
 ---
-title: "Jev Does Not Play Dice: 83% probability, 19% accuracy on a hidden fair die roll"
+title: "Jev Does Not Play Dice"
+subtitle: "83% probability, 19% accuracy on a hidden fair die roll"
 description: "Jev gave a hidden fair die roll an 83% probability and was right 19% of the time. A check of its calibrated probabilities, with code and data."
 slug: "jev-does-not-play-dice"
 pubDatetime: "2026-09-20T00:00:00+09:00"
